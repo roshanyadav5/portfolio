@@ -1,0 +1,29 @@
+{% extends 'base.html' %} {% block title %}Home - Roshan Yadav's
+Portfolio{%endblock %} {% block content %}
+<div class="hero">
+  <section class="left">
+    <span
+      style="
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        font-weight: bold;
+        font-size: 1.4rem;
+        color: var(--secondary-txt);
+      "
+      >HELLO <span class="line"></span
+    ></span>
+    <h1 style="font-size: 2rem">I AM ROSHAN YADAV</h1>
+    <h2>A FULL STACK DEVELOPER</h2>
+    <h3 style="font-size: 0.9rem; color: var(--secondary-txt)">
+      WELL EXPERIENCED IN PYTHON , BUILD WEBSITE <br />
+      & IMPLEMENT AI AND OTHER AUTOMATION TOO.
+    </h3>
+    <button class="btn">Contact Me</button>
+  </section>
+  <section class="right">
+    <img src="static/images/ro-profile.png" alt="" />
+  </section>
+</div>
+{% include 'about.html' %} {% include 'skill.html' %} {% include 'project.html'
+%} {% endblock %}
