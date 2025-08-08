@@ -1,0 +1,9 @@
+<h2 class="about-heading">SKILLS</h2>
+<div id="skill" data-speed="1" class="skill-box">
+  {% for skill in skills %}
+  <div data-speed="1.3" class="boxes">
+    <img src="{{skill.skill_image}}" alt="" />
+    <p>{{skill.skill_title}}</p>
+  </div>
+  {% endfor %}
+</div>

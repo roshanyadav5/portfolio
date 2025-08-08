@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}Roshan Yadav-Portfolio Website{% endblock %}</title>
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="static/images/profile-min-clr.png"
+    />
+  </head>
+  <body>
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <header>
+          <nav class="responsive-navbar">
+            <span id="logo">ROSHAN</span>
+            <ul class="normal-navbar">
+              <li id="home-btn" class="list hover-underline">
+                <a class="n-deco" onclick="hideNavbar()">Home</a>
+              </li>
+              <li id="about-btn" class="list hover-underline">
+                <a class="n-deco" onclick="hideNavbar()">About</a>
+              </li>
+              <li id="project-btn" class="list hover-underline">
+                <a class="n-deco" onclick="hideNavbar()">Projects</a>
+              </li>
+              <li id="contact-btn" class="list hover-underline">
+                <a class="n-deco" onclick="hideNavbar()">Contact</a>
+              </li>
+            </ul>
+            <i
+              class="fa-solid fa-bars bar"
+              onclick="showNavbar()"
+              style="color: #63e6be"
+            ></i>
+
+            <i
+              class="fa-solid fa-xmark cross"
+              onclick="hideNavbar()"
+              style="color: #63e6be"
+            ></i>
+          </nav>
+        </header>
+
+        <main>
+          {% block content %}
+          <!-- Default content can go here -->
+          {% endblock %}
+        </main>
+
+        <footer>
+          <p>&copy; 2025 Roshan Yadav. All rights reserved.</p>
+        </footer>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+      integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollSmoother.min.js"
+      integrity="sha512-t4hwZimhnCKT3YLAsEcAcRDkngVFfCcUIfNLIjklrIZAZKD+GfQMP7HbRcsVHxNS48WRBSywNU1uSM2zzLQt1Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="static\js\script.js"></script>
+  </body>
+</html>

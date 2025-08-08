@@ -1,0 +1,24 @@
+<h2 class="about-heading">CONTACT</h2>
+<div id="contact" class="form-container">
+  <form
+    data-speed="1.1"
+    class="contact"
+    action="{{url_for('submit')}}"
+    method="post"
+  >
+    <label class="stager" for="name">NAME</label><br />
+    <input class="stager" type="text" name="name" id="name" required /><br />
+    <label class="stager" for="email">EMAIL</label><br />
+    <input class="stager" type="email" name="email" id="name" required /><br />
+    <label class="stager" for="message">MESSAGE</label><br />
+    <textarea
+      class="stager"
+      name="message"
+      id="message"
+      cols="30"
+      rows="10"
+    ></textarea
+    ><br />
+    <button class="btn" type="submit">SUBMIT</button>
+  </form>
+</div>
